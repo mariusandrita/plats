@@ -4,9 +4,25 @@
     "platform": "PS5",
     "np_communication_id": "NPWR41753_00",
     "game_icon_url": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR41753_00/ccfdbb0f-6f1b-470c-b822-a5a9dd0e6988.png",
-    "platinum_trophy_name": "Assassin's Creed® Shadows",
-    "platinum_trophy_detail": "Unlock every trophy",
-    "platinum_icon_url": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR41753_00/2ea796a8-2974-4869-a728-cda38a6da491.png",
+    "total_trophies": 76,
+    "platinum": {
+      "name": "Assassin's Creed® Shadows",
+      "detail": "Unlock every trophy",
+      "icon_url": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR41753_00/2ea796a8-2974-4869-a728-cda38a6da491.png",
+      "type": "platinum",
+      "rarity": "Ultra Rare",
+      "earned_rate": "4.2",
+      "earned_at": "2026-08-24T12:11:27Z"
+    },
+    "unlocked_by": {
+      "name": "Happy Place",
+      "detail": "Reach the highest point on the map",
+      "icon_url": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR41753_00/e8f1e4c2-48b1-4178-81a8-748d1a0346ca.png",
+      "type": "bronze",
+      "rarity": "Rare",
+      "earned_rate": "22.7",
+      "earned_at": "2026-08-24T12:11:27Z"
+    },
     "earned_at": "2026-08-24T12:11:27Z"
   },
   {
@@ -14,9 +30,25 @@
     "platform": "PS5,PSPC",
     "np_communication_id": "NPWR23378_00",
     "game_icon_url": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR23378_00/2ef8f325-47bd-4e1d-b731-cb8647b06a70.png",
-    "platinum_trophy_name": "Dedicated",
-    "platinum_trophy_detail": "Collect all Trophies",
-    "platinum_icon_url": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR23378_00/7dfe2c51-40ad-47eb-85d9-17e0f3782e1a.png",
+    "total_trophies": 43,
+    "platinum": {
+      "name": "Dedicated",
+      "detail": "Collect all Trophies",
+      "icon_url": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR23378_00/7dfe2c51-40ad-47eb-85d9-17e0f3782e1a.png",
+      "type": "platinum",
+      "rarity": "Very Rare",
+      "earned_rate": "13.9",
+      "earned_at": "2024-06-18T21:09:13Z"
+    },
+    "unlocked_by": {
+      "name": "Hang Ten",
+      "detail": "Perform 30 Air Tricks in a row without touching the ground",
+      "icon_url": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR23378_00/745354b0-f5ed-4f8c-98d3-7bbad7e48dec.png",
+      "type": "bronze",
+      "rarity": "Rare",
+      "earned_rate": "22.3",
+      "earned_at": "2024-06-18T21:09:13Z"
+    },
     "earned_at": "2024-06-18T21:09:13Z"
   },
   {
@@ -24,9 +56,25 @@
     "platform": "PS5",
     "np_communication_id": "NPWR29894_00",
     "game_icon_url": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR29894_00/9f6ed43e-781f-4232-a75b-1e5f36d31719.png",
-    "platinum_trophy_name": "Master of His Fate",
-    "platinum_trophy_detail": "Earn Every Trophy",
-    "platinum_icon_url": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR29894_00/44c22b9d-7943-4c15-8cc9-9012ca079f89.png",
+    "total_trophies": 62,
+    "platinum": {
+      "name": "Master of His Fate",
+      "detail": "Earn Every Trophy",
+      "icon_url": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR29894_00/44c22b9d-7943-4c15-8cc9-9012ca079f89.png",
+      "type": "platinum",
+      "rarity": "Very Rare",
+      "earned_rate": "5.2",
+      "earned_at": "2024-04-15T20:19:56Z"
+    },
+    "unlocked_by": {
+      "name": "Unstoppable",
+      "detail": "Kill 5 guards with one use of Assassin's Focus",
+      "icon_url": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR29894_00/0e1b1aab-0f06-40e7-851d-a0c73be0c669.png",
+      "type": "silver",
+      "rarity": "Very Rare",
+      "earned_rate": "14.8",
+      "earned_at": "2024-04-15T20:19:56Z"
+    },
     "earned_at": "2024-04-15T20:19:56Z"
   },
   {
@@ -34,9 +82,25 @@
     "platform": "PS5",
     "np_communication_id": "NPWR21008_00",
     "game_icon_url": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR21008_00/2b1ab462-7ee0-4415-81d8-bf2632f03850.png",
-    "platinum_trophy_name": "All Trophies Obtained",
-    "platinum_trophy_detail": "Obtained all Horizon Forbidden West trophies.",
-    "platinum_icon_url": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR21008_00/3f016d47-d5e4-4c8c-b776-8884785e9930.png",
+    "total_trophies": 80,
+    "platinum": {
+      "name": "All Trophies Obtained",
+      "detail": "Obtained all Horizon Forbidden West trophies.",
+      "icon_url": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR21008_00/3f016d47-d5e4-4c8c-b776-8884785e9930.png",
+      "type": "platinum",
+      "rarity": "Very Rare",
+      "earned_rate": "6.4",
+      "earned_at": "2023-01-07T15:06:18Z"
+    },
+    "unlocked_by": {
+      "name": "Completed a Long Glide",
+      "detail": "Glided uninterrupted for 60 seconds.",
+      "icon_url": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR21008_00/e5b70917-5bf6-4ad4-af9e-50492175939b.png",
+      "type": "bronze",
+      "rarity": "Rare",
+      "earned_rate": "20.0",
+      "earned_at": "2023-01-07T15:06:18Z"
+    },
     "earned_at": "2023-01-07T15:06:18Z"
   },
   {
@@ -44,9 +108,25 @@
     "platform": "PS5",
     "np_communication_id": "NPWR22385_00",
     "game_icon_url": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR22385_00/a0bfcc5f-03af-4104-877c-1499076cc22a.png",
-    "platinum_trophy_name": "Conquistador",
-    "platinum_trophy_detail": "Unlock all trophies",
-    "platinum_icon_url": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR22385_00/8de99381-f8e1-46e1-9830-e047b1f49983.png",
+    "total_trophies": 100,
+    "platinum": {
+      "name": "Conquistador",
+      "detail": "Unlock all trophies",
+      "icon_url": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR22385_00/8de99381-f8e1-46e1-9830-e047b1f49983.png",
+      "type": "platinum",
+      "rarity": "Ultra Rare",
+      "earned_rate": "1.1",
+      "earned_at": "2022-02-16T16:53:06Z"
+    },
+    "unlocked_by": {
+      "name": "Oh No You Don't!",
+      "detail": "Take out 3 Insurgent Leaders",
+      "icon_url": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR22385_00/58d7e56f-d575-4be1-a47f-f1b8748ec3a5.png",
+      "type": "bronze",
+      "rarity": "Ultra Rare",
+      "earned_rate": "2.1",
+      "earned_at": "2022-02-16T16:53:06Z"
+    },
     "earned_at": "2022-02-16T16:53:06Z"
   },
   {
@@ -54,9 +134,25 @@
     "platform": "PS5",
     "np_communication_id": "NPWR20954_00",
     "game_icon_url": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR20954_00/338ec131-2911-4905-821c-4f3f514dfa2d.png",
-    "platinum_trophy_name": "Viking Legend",
-    "platinum_trophy_detail": "Win Every Trophy",
-    "platinum_icon_url": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR20954_00/cd91fbbe-d032-4210-973a-e22b5b0b68fe.png",
+    "total_trophies": 93,
+    "platinum": {
+      "name": "Viking Legend",
+      "detail": "Win Every Trophy",
+      "icon_url": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR20954_00/cd91fbbe-d032-4210-973a-e22b5b0b68fe.png",
+      "type": "platinum",
+      "rarity": "Ultra Rare",
+      "earned_rate": "1.4",
+      "earned_at": "2021-11-13T00:23:36Z"
+    },
+    "unlocked_by": {
+      "name": "Twinkle Twinkle",
+      "detail": "Release a firefly in your settlement",
+      "icon_url": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR20954_00/1fbc206d-82f9-42f0-ae85-1636dca8fe63.png",
+      "type": "bronze",
+      "rarity": "Very Rare",
+      "earned_rate": "8.5",
+      "earned_at": "2021-11-13T00:23:36Z"
+    },
     "earned_at": "2021-11-13T00:23:36Z"
   },
   {
@@ -64,9 +160,25 @@
     "platform": "PS4",
     "np_communication_id": "NPWR11437_00",
     "game_icon_url": "https://image.api.playstation.com/trophy/np/NPWR11437_00_0034E02A5B10EA864673E7E129B40D853AD830A629/4882EE3E0AC8D3831789B971A59B3372F2049F21.PNG",
-    "platinum_trophy_name": "The Conqueror",
-    "platinum_trophy_detail": "Get Every Trophy",
-    "platinum_icon_url": "https://image.api.playstation.com/trophy/np/NPWR11437_00_0034E02A5B10EA864673E7E129B40D853AD830A629/BD186074E4AA5E19FABA2C214C9557982C9F58D9.PNG",
+    "total_trophies": 50,
+    "platinum": {
+      "name": "The Conqueror",
+      "detail": "Get Every Trophy",
+      "icon_url": "https://image.api.playstation.com/trophy/np/NPWR11437_00_0034E02A5B10EA864673E7E129B40D853AD830A629/BD186074E4AA5E19FABA2C214C9557982C9F58D9.PNG",
+      "type": "platinum",
+      "rarity": "Ultra Rare",
+      "earned_rate": "4.8",
+      "earned_at": "2021-11-02T09:36:29Z"
+    },
+    "unlocked_by": {
+      "name": "Fond Memories",
+      "detail": "Achieve 100% Synchronization in all Sequences.",
+      "icon_url": "https://image.api.playstation.com/trophy/np/NPWR11437_00_0034E02A5B10EA864673E7E129B40D853AD830A629/63336DE12D0033250CE0A2C9FBC9CF7237D4C121.PNG",
+      "type": "silver",
+      "rarity": "Very Rare",
+      "earned_rate": "7.6",
+      "earned_at": "2021-11-02T09:36:29Z"
+    },
     "earned_at": "2021-11-02T09:36:29Z"
   },
   {
@@ -74,9 +186,25 @@
     "platform": "PS4",
     "np_communication_id": "NPWR11436_00",
     "game_icon_url": "https://image.api.playstation.com/trophy/np/NPWR11436_00_00C89B12831B7D5D7ECB16CB8B7AE050E9BA8B8760/09B139DED0DC4E6DCA3EE321927F133A843D88F1.PNG",
-    "platinum_trophy_name": "Julius Caesar",
-    "platinum_trophy_detail": "Win every trophy.",
-    "platinum_icon_url": "https://image.api.playstation.com/trophy/np/NPWR11436_00_00C89B12831B7D5D7ECB16CB8B7AE050E9BA8B8760/DB112A88346BA2F426DF2F32F892253014DB0E29.PNG",
+    "total_trophies": 51,
+    "platinum": {
+      "name": "Julius Caesar",
+      "detail": "Win every trophy.",
+      "icon_url": "https://image.api.playstation.com/trophy/np/NPWR11436_00_00C89B12831B7D5D7ECB16CB8B7AE050E9BA8B8760/DB112A88346BA2F426DF2F32F892253014DB0E29.PNG",
+      "type": "platinum",
+      "rarity": "Very Rare",
+      "earned_rate": "5.8",
+      "earned_at": "2021-10-31T07:12:55Z"
+    },
+    "unlocked_by": {
+      "name": "Clowning Around",
+      "detail": "Beat up the 5 thirsty harlequins.",
+      "icon_url": "https://image.api.playstation.com/trophy/np/NPWR11436_00_00C89B12831B7D5D7ECB16CB8B7AE050E9BA8B8760/FF6DC4D751C79DF4A393EBEB484AF7CB142503F0.PNG",
+      "type": "silver",
+      "rarity": "Very Rare",
+      "earned_rate": "7.4",
+      "earned_at": "2021-10-31T07:12:55Z"
+    },
     "earned_at": "2021-10-31T07:12:55Z"
   },
   {
@@ -84,9 +212,25 @@
     "platform": "PS5,PSPC",
     "np_communication_id": "NPWR22859_00",
     "game_icon_url": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR22859_00/d7213b2e-8048-40ae-859e-3ce1863b9390.png",
-    "platinum_trophy_name": "Living Legend",
-    "platinum_trophy_detail": "Obtain all trophies.",
-    "platinum_icon_url": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR22859_00/b2d366e0-5c6e-4385-8c68-7cfb2280fa6a.png",
+    "total_trophies": 77,
+    "platinum": {
+      "name": "Living Legend",
+      "detail": "Obtain all trophies.",
+      "icon_url": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR22859_00/b2d366e0-5c6e-4385-8c68-7cfb2280fa6a.png",
+      "type": "platinum",
+      "rarity": "Very Rare",
+      "earned_rate": "7.0",
+      "earned_at": "2021-08-19T23:51:15Z"
+    },
+    "unlocked_by": {
+      "name": "Out of the Past",
+      "detail": "Survive the Eagle's medicine and bid farewell to a new friend.",
+      "icon_url": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR22859_00/0985c366-75a0-41c0-ab52-ade8c2c207df.png",
+      "type": "silver",
+      "rarity": "Rare",
+      "earned_rate": "27.1",
+      "earned_at": "2021-08-22T10:51:20Z"
+    },
     "earned_at": "2021-08-19T23:51:15Z"
   },
   {
@@ -94,9 +238,25 @@
     "platform": "PS5",
     "np_communication_id": "NPWR21810_00",
     "game_icon_url": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR21810_00/fa2ca3f3-0fc6-4a3e-bb4e-0d8a43aeb518.png",
-    "platinum_trophy_name": "Platinum",
-    "platinum_trophy_detail": "Obtain all other trophies",
-    "platinum_icon_url": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR21810_00/8f61a053-1605-4d8e-b6d4-fdfd5c665324.png",
+    "total_trophies": 45,
+    "platinum": {
+      "name": "Platinum",
+      "detail": "Obtain all other trophies",
+      "icon_url": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR21810_00/8f61a053-1605-4d8e-b6d4-fdfd5c665324.png",
+      "type": "platinum",
+      "rarity": "Very Rare",
+      "earned_rate": "9.5",
+      "earned_at": "2021-01-10T16:04:17Z"
+    },
+    "unlocked_by": {
+      "name": "Ruler of the Deep",
+      "detail": "Complete all objectives in The Gulf",
+      "icon_url": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR21810_00/c2567ef2-62cb-4a3e-8702-09881c47d045.png",
+      "type": "bronze",
+      "rarity": "Very Rare",
+      "earned_rate": "10.9",
+      "earned_at": "2021-01-10T16:04:17Z"
+    },
     "earned_at": "2021-01-10T16:04:17Z"
   },
   {
@@ -104,9 +264,25 @@
     "platform": "PS5",
     "np_communication_id": "NPWR20188_00",
     "game_icon_url": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR20188_00/9f84e2fc-0cd2-40f1-bfdb-6774fe3a69f6.png",
-    "platinum_trophy_name": "You've Only Done Everything",
-    "platinum_trophy_detail": "Found all trophies in ASTRO's PLAYROOM. See you in our next adventure!",
-    "platinum_icon_url": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR20188_00/4e1f7ad7-5720-4b03-96a4-ecf8abb17ed8.png",
+    "total_trophies": 51,
+    "platinum": {
+      "name": "You've Only Done Everything",
+      "detail": "Found all trophies in ASTRO's PLAYROOM. See you in our next adventure!",
+      "icon_url": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR20188_00/4e1f7ad7-5720-4b03-96a4-ecf8abb17ed8.png",
+      "type": "platinum",
+      "rarity": "Ultra Rare",
+      "earned_rate": "4.2",
+      "earned_at": "2020-12-03T09:26:55Z"
+    },
+    "unlocked_by": {
+      "name": "You Got a Trophy!",
+      "detail": "Picked up a trophy in PlayStation Labo.",
+      "icon_url": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR20188_00/f6d0a213-761a-400f-9fea-e9c1c81e2f0a.png",
+      "type": "bronze",
+      "rarity": "Very Rare",
+      "earned_rate": "11.8",
+      "earned_at": "2020-12-03T09:26:55Z"
+    },
     "earned_at": "2020-12-03T09:26:55Z"
   },
   {
@@ -114,9 +290,25 @@
     "platform": "PS5",
     "np_communication_id": "NPWR20684_00",
     "game_icon_url": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR20684_00/baa4acc4-a8e5-42f6-ae09-3ae51b6a38fb.png",
-    "platinum_trophy_name": "Be Yourself",
-    "platinum_trophy_detail": "Collect all Trophies",
-    "platinum_icon_url": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR20684_00/18b7d25f-779f-4331-baac-648c85852abe.png",
+    "total_trophies": 50,
+    "platinum": {
+      "name": "Be Yourself",
+      "detail": "Collect all Trophies",
+      "icon_url": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR20684_00/18b7d25f-779f-4331-baac-648c85852abe.png",
+      "type": "platinum",
+      "rarity": "Very Rare",
+      "earned_rate": "5.6",
+      "earned_at": "2020-11-24T13:21:56Z"
+    },
+    "unlocked_by": {
+      "name": "Best Fries in Town",
+      "detail": "Pay your respects to a legend in the Upper West Side",
+      "icon_url": "https://psnobj.prod.dl.playstation.net/psnobj/NPWR20684_00/4c3b58d2-8767-47e7-951d-4adc48e70509.png",
+      "type": "bronze",
+      "rarity": "Very Rare",
+      "earned_rate": "11.2",
+      "earned_at": "2020-11-24T13:21:56Z"
+    },
     "earned_at": "2020-11-24T13:21:56Z"
   },
   {
@@ -124,9 +316,25 @@
     "platform": "PS4",
     "np_communication_id": "NPWR11435_00",
     "game_icon_url": "https://image.api.playstation.com/trophy/np/NPWR11435_00_00025CC40B8D85858575298BAA090D80E9E134D207/987B37AA2202ABB7055B12AD6E63A95EC077D01E.PNG",
-    "platinum_trophy_name": "Master Assassin",
-    "platinum_trophy_detail": "Unlock all trophies.",
-    "platinum_icon_url": "https://image.api.playstation.com/trophy/np/NPWR11435_00_00025CC40B8D85858575298BAA090D80E9E134D207/8BD0AD8DBDCE75D13D3BA38D66F321FBC24F776B.PNG",
+    "total_trophies": 51,
+    "platinum": {
+      "name": "Master Assassin",
+      "detail": "Unlock all trophies.",
+      "icon_url": "https://image.api.playstation.com/trophy/np/NPWR11435_00_00025CC40B8D85858575298BAA090D80E9E134D207/8BD0AD8DBDCE75D13D3BA38D66F321FBC24F776B.PNG",
+      "type": "platinum",
+      "rarity": "Very Rare",
+      "earned_rate": "5.7",
+      "earned_at": "2020-11-12T08:08:12Z"
+    },
+    "unlocked_by": {
+      "name": "Art Connoisseur",
+      "detail": "Buy a Painting from Florence and Venice.",
+      "icon_url": "https://image.api.playstation.com/trophy/np/NPWR11435_00_00025CC40B8D85858575298BAA090D80E9E134D207/9FC4191EF8E3B734768B1055EDA155E3E94CC4F2.PNG",
+      "type": "bronze",
+      "rarity": "Rare",
+      "earned_rate": "20.1",
+      "earned_at": "2020-11-12T08:08:12Z"
+    },
     "earned_at": "2020-11-12T08:08:12Z"
   },
   {
@@ -134,9 +342,25 @@
     "platform": "PS4",
     "np_communication_id": "NPWR19337_00",
     "game_icon_url": "https://image.api.playstation.com/trophy/np/NPWR19337_00_00EBB6DCAAEF51C3C5D990636999BD391F4F49EF2C/CB6163D46A86C0534D5C15CE304DD4D71633C542.PNG",
-    "platinum_trophy_name": "MotoGP™ Hero",
-    "platinum_trophy_detail": "Unlock all trophies",
-    "platinum_icon_url": "https://image.api.playstation.com/trophy/np/NPWR19337_00_00EBB6DCAAEF51C3C5D990636999BD391F4F49EF2C/72654E28D28013EB210BBF115DE7FE537CD1BE91.PNG",
+    "total_trophies": 51,
+    "platinum": {
+      "name": "MotoGP™ Hero",
+      "detail": "Unlock all trophies",
+      "icon_url": "https://image.api.playstation.com/trophy/np/NPWR19337_00_00EBB6DCAAEF51C3C5D990636999BD391F4F49EF2C/72654E28D28013EB210BBF115DE7FE537CD1BE91.PNG",
+      "type": "platinum",
+      "rarity": "Ultra Rare",
+      "earned_rate": "0.7",
+      "earned_at": "2020-09-19T18:41:04Z"
+    },
+    "unlocked_by": {
+      "name": "Steaming Wheels",
+      "detail": "Complete 25 valid laps in Time Trial mode",
+      "icon_url": "https://image.api.playstation.com/trophy/np/NPWR19337_00_00EBB6DCAAEF51C3C5D990636999BD391F4F49EF2C/CCD96ECCFEA27E88CBF5C0A31C57DDA39EA9CD3C.PNG",
+      "type": "silver",
+      "rarity": "Ultra Rare",
+      "earned_rate": "2.5",
+      "earned_at": "2020-09-19T18:41:04Z"
+    },
     "earned_at": "2020-09-19T18:41:04Z"
   },
   {
@@ -144,9 +368,25 @@
     "platform": "PS4",
     "np_communication_id": "NPWR15120_00",
     "game_icon_url": "https://image.api.playstation.com/trophy/np/NPWR15120_00_00736F40BFE5A427C57A238478A141FABB81ABA3C7/F7780A7B9141F2A1D0B68E578787D962D7F69C31.PNG",
-    "platinum_trophy_name": "Living Legend",
-    "platinum_trophy_detail": "Obtain all trophies.",
-    "platinum_icon_url": "https://image.api.playstation.com/trophy/np/NPWR15120_00_00736F40BFE5A427C57A238478A141FABB81ABA3C7/CC394FF43A6FAC992508DDFD3CAAF8D361676D78.PNG",
+    "total_trophies": 77,
+    "platinum": {
+      "name": "Living Legend",
+      "detail": "Obtain all trophies.",
+      "icon_url": "https://image.api.playstation.com/trophy/np/NPWR15120_00_00736F40BFE5A427C57A238478A141FABB81ABA3C7/CC394FF43A6FAC992508DDFD3CAAF8D361676D78.PNG",
+      "type": "platinum",
+      "rarity": "Very Rare",
+      "earned_rate": "8.3",
+      "earned_at": "2020-07-31T15:08:49Z"
+    },
+    "unlocked_by": {
+      "name": "Dirge of the Fallen Forge",
+      "detail": "Play the \"Lament of the Storm\" at a friend's grave.",
+      "icon_url": "https://image.api.playstation.com/trophy/np/NPWR15120_00_00736F40BFE5A427C57A238478A141FABB81ABA3C7/E5C5F951E17C11774050D3DA2C35DC6285B40A16.PNG",
+      "type": "bronze",
+      "rarity": "Very Rare",
+      "earned_rate": "9.9",
+      "earned_at": "2020-07-31T15:08:49Z"
+    },
     "earned_at": "2020-07-31T15:08:49Z"
   },
   {
@@ -154,9 +394,25 @@
     "platform": "PS4",
     "np_communication_id": "NPWR09167_00",
     "game_icon_url": "https://image.api.playstation.com/trophy/np/NPWR09167_00_007280BC379B5701D2D862A6574F73488DA1CDFBBA/871AF040ECAA2A94B7EB5534E062AEAF13D72C35.PNG",
-    "platinum_trophy_name": "Be Greater",
-    "platinum_trophy_detail": "Collect all Trophies",
-    "platinum_icon_url": "https://image.api.playstation.com/trophy/np/NPWR09167_00_007280BC379B5701D2D862A6574F73488DA1CDFBBA/F973F8A161ACB00C3D7D94404B1C0626C9615631.PNG",
+    "total_trophies": 74,
+    "platinum": {
+      "name": "Be Greater",
+      "detail": "Collect all Trophies",
+      "icon_url": "https://image.api.playstation.com/trophy/np/NPWR09167_00_007280BC379B5701D2D862A6574F73488DA1CDFBBA/F973F8A161ACB00C3D7D94404B1C0626C9615631.PNG",
+      "type": "platinum",
+      "rarity": "Very Rare",
+      "earned_rate": "8.3",
+      "earned_at": "2020-06-17T18:48:24Z"
+    },
+    "unlocked_by": {
+      "name": "Frenemies",
+      "detail": "Complete the \"Old Friends\" mission",
+      "icon_url": "https://image.api.playstation.com/trophy/np/NPWR09167_00_007280BC379B5701D2D862A6574F73488DA1CDFBBA/9BE0DDA619CBD82F845E5E749A638730271C4ECF.PNG",
+      "type": "bronze",
+      "rarity": "Very Rare",
+      "earned_rate": "11.6",
+      "earned_at": "2020-07-10T20:46:35Z"
+    },
     "earned_at": "2020-06-17T18:48:24Z"
   },
   {
@@ -164,9 +420,25 @@
     "platform": "PS4",
     "np_communication_id": "NPWR05974_00",
     "game_icon_url": "https://image.api.playstation.com/trophy/np/NPWR05974_00_00A37BA542EC46DBF8A24E0B1177E1172B4F1FB8EC/636175FE59DB1D85DE059BA7EEE8188C7B63FD7B.PNG",
-    "platinum_trophy_name": "Diablo III: Reaper of Souls Platinum Trophy",
-    "platinum_trophy_detail": "Collected all other Diablo III: Reaper of Souls trophies.",
-    "platinum_icon_url": "https://image.api.playstation.com/trophy/np/NPWR05974_00_00A37BA542EC46DBF8A24E0B1177E1172B4F1FB8EC/8F27EA772DA3F52CA4F17F16B0FF9881CA3EC71E.PNG",
+    "total_trophies": 54,
+    "platinum": {
+      "name": "Diablo III: Reaper of Souls Platinum Trophy",
+      "detail": "Collected all other Diablo III: Reaper of Souls trophies.",
+      "icon_url": "https://image.api.playstation.com/trophy/np/NPWR05974_00_00A37BA542EC46DBF8A24E0B1177E1172B4F1FB8EC/8F27EA772DA3F52CA4F17F16B0FF9881CA3EC71E.PNG",
+      "type": "platinum",
+      "rarity": "Ultra Rare",
+      "earned_rate": "2.8",
+      "earned_at": "2020-04-18T09:14:20Z"
+    },
+    "unlocked_by": {
+      "name": "Reign of Terror",
+      "detail": "Kill Diablo in Hardcore mode.",
+      "icon_url": "https://image.api.playstation.com/trophy/np/NPWR05974_00_00A37BA542EC46DBF8A24E0B1177E1172B4F1FB8EC/DC4E1D4D790645BC3DC3E9E78CD01EFC71862694.PNG",
+      "type": "silver",
+      "rarity": "Very Rare",
+      "earned_rate": "5.9",
+      "earned_at": "2020-04-18T09:14:20Z"
+    },
     "earned_at": "2020-04-18T09:14:20Z"
   },
   {
@@ -174,9 +446,25 @@
     "platform": "PS4",
     "np_communication_id": "NPWR18041_00",
     "game_icon_url": "https://image.api.playstation.com/trophy/np/NPWR18041_00_005939904E99277C7FBD3A6FFEE1A781FC684496B6/877A808A99C061E4B17D85E284654963545681B9.PNG",
-    "platinum_trophy_name": "The Need For Speed",
-    "platinum_trophy_detail": "Collect all trophies",
-    "platinum_icon_url": "https://image.api.playstation.com/trophy/np/NPWR18041_00_005939904E99277C7FBD3A6FFEE1A781FC684496B6/2B2B0B5EA23D6446E54C626F2467F2B696F9C2DC.PNG",
+    "total_trophies": 43,
+    "platinum": {
+      "name": "The Need For Speed",
+      "detail": "Collect all trophies",
+      "icon_url": "https://image.api.playstation.com/trophy/np/NPWR18041_00_005939904E99277C7FBD3A6FFEE1A781FC684496B6/2B2B0B5EA23D6446E54C626F2467F2B696F9C2DC.PNG",
+      "type": "platinum",
+      "rarity": "Ultra Rare",
+      "earned_rate": "1.0",
+      "earned_at": "2020-04-11T13:41:33Z"
+    },
+    "unlocked_by": {
+      "name": "All For One",
+      "detail": "Reach max Crew Level with your Crew",
+      "icon_url": "https://image.api.playstation.com/trophy/np/NPWR18041_00_005939904E99277C7FBD3A6FFEE1A781FC684496B6/269DC9F95907C51530B480FEF12E81A05139D0DF.PNG",
+      "type": "silver",
+      "rarity": "Very Rare",
+      "earned_rate": "12.7",
+      "earned_at": "2020-04-11T13:41:33Z"
+    },
     "earned_at": "2020-04-11T13:41:33Z"
   },
   {
@@ -184,9 +472,25 @@
     "platform": "PS4",
     "np_communication_id": "NPWR11556_00",
     "game_icon_url": "https://image.api.playstation.com/trophy/np/NPWR11556_00_005122C6D8E4545DAC325B8E748CBE7180ED11F3E7/F24674E946809EB0A2E214DB490149851BCEC0EC.PNG",
-    "platinum_trophy_name": "All trophies obtained",
-    "platinum_trophy_detail": "Obtained all Horizon Zero Dawn trophies.",
-    "platinum_icon_url": "https://image.api.playstation.com/trophy/np/NPWR11556_00_005122C6D8E4545DAC325B8E748CBE7180ED11F3E7/1E6115EB5EA2E026D9A157BE27A44DFBBE329C7C.PNG",
+    "total_trophies": 79,
+    "platinum": {
+      "name": "All trophies obtained",
+      "detail": "Obtained all Horizon Zero Dawn trophies.",
+      "icon_url": "https://image.api.playstation.com/trophy/np/NPWR11556_00_005122C6D8E4545DAC325B8E748CBE7180ED11F3E7/1E6115EB5EA2E026D9A157BE27A44DFBBE329C7C.PNG",
+      "type": "platinum",
+      "rarity": "Very Rare",
+      "earned_rate": "5.3",
+      "earned_at": "2019-07-21T08:24:19Z"
+    },
+    "unlocked_by": {
+      "name": "All allies joined",
+      "detail": "Given Aloy's actions, all possible optional allies joined the defense.",
+      "icon_url": "https://image.api.playstation.com/trophy/np/NPWR11556_00_005122C6D8E4545DAC325B8E748CBE7180ED11F3E7/B0178B299BC37CB92DED9805B1580A95D83A9D1A.PNG",
+      "type": "bronze",
+      "rarity": "Very Rare",
+      "earned_rate": "9.6",
+      "earned_at": "2019-07-21T08:24:19Z"
+    },
     "earned_at": "2019-07-21T08:24:19Z"
   },
   {
@@ -194,9 +498,25 @@
     "platform": "PS4",
     "np_communication_id": "NPWR13822_00",
     "game_icon_url": "https://image.api.playstation.com/trophy/np/NPWR13822_00_00E63FD8AB71E35431D284C875D26290C020A6ED1A/DEE0D4E5A10A52EA06309E73E38FDA92B759C1DC.PNG",
-    "platinum_trophy_name": "Epic Cycle",
-    "platinum_trophy_detail": "Earn every trophy.",
-    "platinum_icon_url": "https://image.api.playstation.com/trophy/np/NPWR13822_00_00E63FD8AB71E35431D284C875D26290C020A6ED1A/B5B878FE7C5CBEE4A4139DD84633B106B105EF85.PNG",
+    "total_trophies": 94,
+    "platinum": {
+      "name": "Epic Cycle",
+      "detail": "Earn every trophy.",
+      "icon_url": "https://image.api.playstation.com/trophy/np/NPWR13822_00_00E63FD8AB71E35431D284C875D26290C020A6ED1A/B5B878FE7C5CBEE4A4139DD84633B106B105EF85.PNG",
+      "type": "platinum",
+      "rarity": "Ultra Rare",
+      "earned_rate": "4.2",
+      "earned_at": "2018-11-10T09:40:14Z"
+    },
+    "unlocked_by": {
+      "name": "Lightning Rod",
+      "detail": "Defeat Steropes the Lightning Bringer.",
+      "icon_url": "https://image.api.playstation.com/trophy/np/NPWR13822_00_00E63FD8AB71E35431D284C875D26290C020A6ED1A/B38289F08889C6DF4A25B4F63CEA894400740C79.PNG",
+      "type": "bronze",
+      "rarity": "Rare",
+      "earned_rate": "25.5",
+      "earned_at": "2018-11-18T17:19:22Z"
+    },
     "earned_at": "2018-11-10T09:40:14Z"
   },
   {
@@ -204,9 +524,25 @@
     "platform": "PS4",
     "np_communication_id": "NPWR12518_00",
     "game_icon_url": "https://image.api.playstation.com/trophy/np/NPWR12518_00_009C1232E900005FE409857E926767DFE9CAC7F371/CCDC60CADE4B3970C348FEFDE0094BA95C0A802F.PNG",
-    "platinum_trophy_name": "Father and Son",
-    "platinum_trophy_detail": "Obtain all other trophies",
-    "platinum_icon_url": "https://image.api.playstation.com/trophy/np/NPWR12518_00_009C1232E900005FE409857E926767DFE9CAC7F371/3528A7CED1D08A8BCEE23DF7EA55DE3E0C6F11CF.PNG",
+    "total_trophies": 37,
+    "platinum": {
+      "name": "Father and Son",
+      "detail": "Obtain all other trophies",
+      "icon_url": "https://image.api.playstation.com/trophy/np/NPWR12518_00_009C1232E900005FE409857E926767DFE9CAC7F371/3528A7CED1D08A8BCEE23DF7EA55DE3E0C6F11CF.PNG",
+      "type": "platinum",
+      "rarity": "Ultra Rare",
+      "earned_rate": "4.6",
+      "earned_at": "2018-09-08T14:11:57Z"
+    },
+    "unlocked_by": {
+      "name": "The Truth",
+      "detail": "Read all of the Jötnar shrines",
+      "icon_url": "https://image.api.playstation.com/trophy/np/NPWR12518_00_009C1232E900005FE409857E926767DFE9CAC7F371/59328CE12FC07DA67B7AE660CD44A9907DA04140.PNG",
+      "type": "silver",
+      "rarity": "Very Rare",
+      "earned_rate": "10.5",
+      "earned_at": "2018-09-08T14:11:57Z"
+    },
     "earned_at": "2018-09-08T14:11:57Z"
   },
   {
@@ -214,9 +550,25 @@
     "platform": "PS4",
     "np_communication_id": "NPWR11424_00",
     "game_icon_url": "https://image.api.playstation.com/trophy/np/NPWR11424_00_00B0C1B25B2BC046B57977D1690CE5A22AFC430A01/FD3786571EEA68F65321230E711DCAE92BC53794.PNG",
-    "platinum_trophy_name": "Earn Them All!",
-    "platinum_trophy_detail": "Earn every trophy.",
-    "platinum_icon_url": "https://image.api.playstation.com/trophy/np/NPWR11424_00_00B0C1B25B2BC046B57977D1690CE5A22AFC430A01/974BFC12CC54B1D65F6D191BDB63C644023F6633.PNG",
+    "total_trophies": 68,
+    "platinum": {
+      "name": "Earn Them All!",
+      "detail": "Earn every trophy.",
+      "icon_url": "https://image.api.playstation.com/trophy/np/NPWR11424_00_00B0C1B25B2BC046B57977D1690CE5A22AFC430A01/974BFC12CC54B1D65F6D191BDB63C644023F6633.PNG",
+      "type": "platinum",
+      "rarity": "Ultra Rare",
+      "earned_rate": "3.6",
+      "earned_at": "2018-01-23T19:56:39Z"
+    },
+    "unlocked_by": {
+      "name": "Overheating",
+      "detail": "Witness raining bugs in the desert.",
+      "icon_url": "https://image.api.playstation.com/trophy/np/NPWR11424_00_00B0C1B25B2BC046B57977D1690CE5A22AFC430A01/BA89E8FD9D14B0AA023DFD2A911EE0559EC16D7E.PNG",
+      "type": "bronze",
+      "rarity": "Very Rare",
+      "earned_rate": "13.1",
+      "earned_at": "2018-01-23T19:56:39Z"
+    },
     "earned_at": "2018-01-23T19:56:39Z"
   },
   {
@@ -224,9 +576,25 @@
     "platform": "PS4",
     "np_communication_id": "NPWR10569_00",
     "game_icon_url": "https://image.api.playstation.com/trophy/np/NPWR10569_00_00C0594B81F249950525CF287A5806857E9583B8CD/51BA4DA918092214806AABBB37B4E605FDD978A0.PNG",
-    "platinum_trophy_name": "The Bright Lord",
-    "platinum_trophy_detail": "Middle-earth has been saved. For now...",
-    "platinum_icon_url": "https://image.api.playstation.com/trophy/np/NPWR10569_00_00C0594B81F249950525CF287A5806857E9583B8CD/6A652154A573511CE4BBF8D756BE0B5D6CE3A3B4.PNG",
+    "total_trophies": 73,
+    "platinum": {
+      "name": "The Bright Lord",
+      "detail": "Middle-earth has been saved. For now...",
+      "icon_url": "https://image.api.playstation.com/trophy/np/NPWR10569_00_00C0594B81F249950525CF287A5806857E9583B8CD/6A652154A573511CE4BBF8D756BE0B5D6CE3A3B4.PNG",
+      "type": "platinum",
+      "rarity": "Ultra Rare",
+      "earned_rate": "1.9",
+      "earned_at": "2017-10-27T13:01:59Z"
+    },
+    "unlocked_by": {
+      "name": "Peace in Death",
+      "detail": "Complete the Shadow Wars.",
+      "icon_url": "https://image.api.playstation.com/trophy/np/NPWR10569_00_00C0594B81F249950525CF287A5806857E9583B8CD/6F8932DF9CDBD9D4313D8E3CFA161DF4AC2083C3.PNG",
+      "type": "silver",
+      "rarity": "Very Rare",
+      "earned_rate": "11.9",
+      "earned_at": "2017-10-27T13:01:59Z"
+    },
     "earned_at": "2017-10-27T13:01:59Z"
   },
   {
@@ -234,9 +602,25 @@
     "platform": "PS4",
     "np_communication_id": "NPWR08491_00",
     "game_icon_url": "https://image.api.playstation.com/trophy/np/NPWR08491_00_006E495D3F759EFF98B2817FBD30C8DE2D40CF5293/6F6E49E85EAAFD47346385B8CEE8A98C22F3954B.PNG",
-    "platinum_trophy_name": "Master of Mordor",
-    "platinum_trophy_detail": "One has walked in Mordor.",
-    "platinum_icon_url": "https://image.api.playstation.com/trophy/np/NPWR08491_00_006E495D3F759EFF98B2817FBD30C8DE2D40CF5293/CA78CDA67C476823B262EB4FE14B4BABBF573FB1.PNG",
+    "total_trophies": 75,
+    "platinum": {
+      "name": "Master of Mordor",
+      "detail": "One has walked in Mordor.",
+      "icon_url": "https://image.api.playstation.com/trophy/np/NPWR08491_00_006E495D3F759EFF98B2817FBD30C8DE2D40CF5293/CA78CDA67C476823B262EB4FE14B4BABBF573FB1.PNG",
+      "type": "platinum",
+      "rarity": "Ultra Rare",
+      "earned_rate": "3.9",
+      "earned_at": "2017-07-05T11:29:41Z"
+    },
+    "unlocked_by": {
+      "name": "From Shadow to Shadow",
+      "detail": "Stealth Brand a Captain.",
+      "icon_url": "https://image.api.playstation.com/trophy/np/NPWR08491_00_006E495D3F759EFF98B2817FBD30C8DE2D40CF5293/85680F2EC528BD6E4FCBE762C6B423BD9C22ADD1.PNG",
+      "type": "bronze",
+      "rarity": "Ultra Rare",
+      "earned_rate": "3.8",
+      "earned_at": "2017-09-01T08:57:31Z"
+    },
     "earned_at": "2017-07-05T11:29:41Z"
   },
   {
@@ -244,9 +628,25 @@
     "platform": "PS4",
     "np_communication_id": "NPWR08501_00",
     "game_icon_url": "https://image.api.playstation.com/trophy/np/NPWR08501_00_00E9B118022FF6389B778A5845EFA6A1A6BD8BBD35/F5BEA2E02DE0DFF4F84A568AE6D8FA6AB5F9660B.PNG",
-    "platinum_trophy_name": "Master of the Octagon",
-    "platinum_trophy_detail": "Unlock all other trophies in EA SPORTS™ UFC® 2.",
-    "platinum_icon_url": "https://image.api.playstation.com/trophy/np/NPWR08501_00_00E9B118022FF6389B778A5845EFA6A1A6BD8BBD35/845B103C2E7B5D3BD8C777A044B3FD710FDDDC61.PNG",
+    "total_trophies": 34,
+    "platinum": {
+      "name": "Master of the Octagon",
+      "detail": "Unlock all other trophies in EA SPORTS™ UFC® 2.",
+      "icon_url": "https://image.api.playstation.com/trophy/np/NPWR08501_00_00E9B118022FF6389B778A5845EFA6A1A6BD8BBD35/845B103C2E7B5D3BD8C777A044B3FD710FDDDC61.PNG",
+      "type": "platinum",
+      "rarity": "Ultra Rare",
+      "earned_rate": "0.1",
+      "earned_at": "2017-06-24T16:31:16Z"
+    },
+    "unlocked_by": {
+      "name": "I Got This",
+      "detail": "Won a short notice fight in your career.",
+      "icon_url": "https://image.api.playstation.com/trophy/np/NPWR08501_00_00E9B118022FF6389B778A5845EFA6A1A6BD8BBD35/5502098D6CF14C3504A84CB04817ACB270F701E9.PNG",
+      "type": "bronze",
+      "rarity": "Rare",
+      "earned_rate": "15.5",
+      "earned_at": "2017-06-24T16:31:16Z"
+    },
     "earned_at": "2017-06-24T16:31:16Z"
   },
   {
@@ -254,9 +654,25 @@
     "platform": "PS4",
     "np_communication_id": "NPWR08538_00",
     "game_icon_url": "https://image.api.playstation.com/trophy/np/NPWR08538_00_005BCD0C95E2E5EDAB4E272262983CCE2406A84C56/9E030E907739B174AB95B8B95645FBBDADB659BB.PNG",
-    "platinum_trophy_name": "Platinum Trophy",
-    "platinum_trophy_detail": "Earn all Need for Speed™ Trophies",
-    "platinum_icon_url": "https://image.api.playstation.com/trophy/np/NPWR08538_00_005BCD0C95E2E5EDAB4E272262983CCE2406A84C56/423F792BC314CC57333C229F9930B0C459BDB996.PNG",
+    "total_trophies": 46,
+    "platinum": {
+      "name": "Platinum Trophy",
+      "detail": "Earn all Need for Speed™ Trophies",
+      "icon_url": "https://image.api.playstation.com/trophy/np/NPWR08538_00_005BCD0C95E2E5EDAB4E272262983CCE2406A84C56/423F792BC314CC57333C229F9930B0C459BDB996.PNG",
+      "type": "platinum",
+      "rarity": "Very Rare",
+      "earned_rate": "5.1",
+      "earned_at": "2017-04-08T19:12:59Z"
+    },
+    "unlocked_by": {
+      "name": "Hit The Ceiling",
+      "detail": "Reach REP Level 70",
+      "icon_url": "https://image.api.playstation.com/trophy/np/NPWR08538_00_005BCD0C95E2E5EDAB4E272262983CCE2406A84C56/16BB605A8D9E9B5F2494282165DD75C5D877E73F.PNG",
+      "type": "bronze",
+      "rarity": "Ultra Rare",
+      "earned_rate": "4.3",
+      "earned_at": "2017-05-04T14:57:27Z"
+    },
     "earned_at": "2017-04-08T19:12:59Z"
   }
 ]

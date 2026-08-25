@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 """Sync earned Platinum trophies from PSN into data/platinums.json.
 
+For each platinum, also records the trophy that actually unlocked it (the
+last non-platinum trophy earned in that game) plus rarity/earn-rate stats
+for both, so the showcase can show "how it happened", not just that it did.
+
 Usage:
     python3 scripts/sync_platinums.py <npsso>
 
@@ -27,6 +31,8 @@ SCOPE = "psn:mobile.v2.core psn:clientapp"
 AUTH_URL = "https://ca.account.sony.com/api/authz/v3/oauth/authorize"
 TOKEN_URL = "https://ca.account.sony.com/api/authz/v3/oauth/token"
 HEADERS = {"User-Agent": "PlayStation/21090100 CFNetwork/1126", "Accept-Language": "en-US"}
+
+RARITY_LABELS = {0: "Ultra Rare", 1: "Very Rare", 2: "Rare", 3: "Common"}
 
 OUT_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "platinums.json")
 
@@ -102,8 +108,8 @@ def fetch_trophy_titles(auth_headers):
     return all_titles
 
 
-def fetch_platinum(np_comm_id, auth_headers):
-    """Returns (earned_at, trophy_name, trophy_detail, icon_url) or None."""
+def fetch_game_trophies(np_comm_id, auth_headers):
+    """Returns (earned_list, defs_by_id) for one game, or (None, None) on failure."""
     earned_url = f"https://m.np.playstation.com/api/trophy/v1/users/me/npCommunicationIds/{np_comm_id}/trophyGroups/all/trophies"
     defs_url = f"https://m.np.playstation.com/api/trophy/v1/npCommunicationIds/{np_comm_id}/trophyGroups/all/trophies"
 
@@ -115,29 +121,30 @@ def fetch_platinum(np_comm_id, auth_headers):
         svc_suffix = "?npServiceName=trophy"
         status, data = http(earned_url + svc_suffix, headers=auth_headers)
     if status != 200:
-        return None
+        return None, None
 
-    plat = next(
-        (t for t in json.loads(data).get("trophies", []) if t.get("trophyType") == "platinum" and t.get("earned")),
-        None,
-    )
-    if not plat:
-        return None
+    earned = json.loads(data).get("trophies", [])
 
     def_status, def_data = http(defs_url + svc_suffix, headers=auth_headers)
-    plat_def = {}
+    defs_by_id = {}
     if def_status == 200:
-        plat_def = next(
-            (t for t in json.loads(def_data).get("trophies", []) if t.get("trophyType") == "platinum"),
-            {},
-        ) or {}
+        for t in json.loads(def_data).get("trophies", []):
+            defs_by_id[t["trophyId"]] = t
 
-    return (
-        plat.get("earnedDateTime"),
-        plat_def.get("trophyName"),
-        plat_def.get("trophyDetail"),
-        plat_def.get("trophyIconUrl"),
-    )
+    return earned, defs_by_id
+
+
+def describe_trophy(earned_entry, defs_by_id):
+    d = defs_by_id.get(earned_entry["trophyId"], {})
+    return {
+        "name": d.get("trophyName"),
+        "detail": d.get("trophyDetail"),
+        "icon_url": d.get("trophyIconUrl"),
+        "type": earned_entry.get("trophyType"),
+        "rarity": RARITY_LABELS.get(earned_entry.get("trophyRare")),
+        "earned_rate": earned_entry.get("trophyEarnedRate"),
+        "earned_at": earned_entry.get("earnedDateTime"),
+    }
 
 
 def main():
@@ -156,22 +163,32 @@ def main():
     results = []
     for t in plat_games:
         np_comm_id = t["npCommunicationId"]
-        found = fetch_platinum(np_comm_id, auth_headers)
-        if not found:
+        earned, defs_by_id = fetch_game_trophies(np_comm_id, auth_headers)
+        if earned is None:
             print(f"  skip: {t['trophyTitleName']} (no trophy data)", file=sys.stderr)
             continue
-        earned_at, name, detail, icon_url = found
-        results.append({
+
+        earned_only = [e for e in earned if e.get("earned")]
+        platinum = next((e for e in earned_only if e.get("trophyType") == "platinum"), None)
+        if not platinum:
+            print(f"  skip: {t['trophyTitleName']} (no earned platinum?)", file=sys.stderr)
+            continue
+
+        non_plat_earned = [e for e in earned_only if e.get("trophyType") != "platinum"]
+        last_trophy_entry = max(non_plat_earned, key=lambda e: e.get("earnedDateTime") or "", default=None)
+
+        entry = {
             "game_title": t["trophyTitleName"],
             "platform": t.get("trophyTitlePlatform"),
             "np_communication_id": np_comm_id,
             "game_icon_url": t.get("trophyTitleIconUrl"),
-            "platinum_trophy_name": name,
-            "platinum_trophy_detail": detail,
-            "platinum_icon_url": icon_url,
-            "earned_at": earned_at,
-        })
-        print(f"  ok: {t['trophyTitleName']} -> {earned_at}", file=sys.stderr)
+            "total_trophies": len(earned),
+            "platinum": describe_trophy(platinum, defs_by_id),
+            "unlocked_by": describe_trophy(last_trophy_entry, defs_by_id) if last_trophy_entry else None,
+            "earned_at": platinum.get("earnedDateTime"),
+        }
+        results.append(entry)
+        print(f"  ok: {t['trophyTitleName']} -> {entry['earned_at']} (unlocked by: {entry['unlocked_by']['name'] if entry['unlocked_by'] else '?'})", file=sys.stderr)
         time.sleep(0.15)
 
     results.sort(key=lambda r: r["earned_at"] or "", reverse=True)

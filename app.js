@@ -8,10 +8,18 @@ function isVideo(filename) {
   return VIDEO_EXT.has(extOf(filename));
 }
 
-function formatTimestamp(iso) {
+function formatDate(iso) {
   if (!iso) return "";
   const d = new Date(iso);
   return d.toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" });
+}
+
+function formatDateTime(iso) {
+  if (!iso) return "";
+  const d = new Date(iso);
+  return d.toLocaleString(undefined, {
+    year: "numeric", month: "short", day: "numeric", hour: "numeric", minute: "2-digit",
+  });
 }
 
 function cleanTitle(title) {
@@ -28,17 +36,16 @@ async function fetchJson(path) {
   }
 }
 
-function mediaEl(filename) {
+function mediaEl(filename, { muted = true, controls = false } = {}) {
   const src = `media/${filename}`;
   if (isVideo(filename)) {
     const video = document.createElement("video");
     video.src = src;
-    video.muted = true;
+    video.muted = muted;
     video.loop = true;
     video.playsInline = true;
     video.preload = "metadata";
-    video.addEventListener("mouseenter", () => video.play().catch(() => {}));
-    video.addEventListener("mouseleave", () => video.pause());
+    video.controls = controls;
     return video;
   }
   const img = document.createElement("img");
@@ -58,7 +65,12 @@ function buildCard(entry, mediaMap) {
 
   if (filename) {
     mediaWrap.className = "card-media";
-    mediaWrap.appendChild(mediaEl(filename));
+    const el = mediaEl(filename);
+    mediaWrap.appendChild(el);
+    if (el.tagName === "VIDEO") {
+      mediaWrap.addEventListener("mouseenter", () => el.play().catch(() => {}));
+      mediaWrap.addEventListener("mouseleave", () => el.pause());
+    }
   } else {
     mediaWrap.className = "card-media placeholder";
     if (entry.game_icon_url) {
@@ -73,12 +85,29 @@ function buildCard(entry, mediaMap) {
     mediaWrap.appendChild(tag);
   }
 
-  if (entry.platinum_icon_url) {
+  const plat = entry.platinum || {};
+  if (plat.icon_url) {
     const platIcon = document.createElement("img");
     platIcon.className = "plat-icon";
-    platIcon.src = entry.platinum_icon_url;
+    platIcon.src = plat.icon_url;
     platIcon.alt = "Platinum";
     mediaWrap.appendChild(platIcon);
+  }
+
+  if (filename && entry.unlocked_by) {
+    const chip = document.createElement("div");
+    chip.className = "unlocked-chip";
+    chip.innerHTML = `<span class="label">Unlocked by</span>`;
+    if (entry.unlocked_by.icon_url) {
+      const icon = document.createElement("img");
+      icon.src = entry.unlocked_by.icon_url;
+      icon.alt = "";
+      chip.appendChild(icon);
+    }
+    const name = document.createElement("span");
+    name.textContent = entry.unlocked_by.name || "";
+    chip.appendChild(name);
+    mediaWrap.appendChild(chip);
   }
 
   const body = document.createElement("div");
@@ -87,20 +116,21 @@ function buildCard(entry, mediaMap) {
   const title = document.createElement("div");
   title.className = "game-title";
   title.textContent = cleanTitle(entry.game_title);
+  body.appendChild(title);
 
+  const meta = document.createElement("div");
+  meta.className = "card-meta";
   const ts = document.createElement("div");
   ts.className = "timestamp";
-  ts.textContent = formatTimestamp(entry.earned_at);
-
-  body.appendChild(title);
-  body.appendChild(ts);
-
+  ts.textContent = formatDate(entry.earned_at);
+  meta.appendChild(ts);
   if (entry.platform) {
-    const plat = document.createElement("span");
-    plat.className = "platform-tag";
-    plat.textContent = entry.platform.split(",")[0];
-    body.appendChild(plat);
+    const platform = document.createElement("span");
+    platform.className = "platform-tag";
+    platform.textContent = entry.platform.split(",")[0];
+    meta.appendChild(platform);
   }
+  body.appendChild(meta);
 
   card.appendChild(mediaWrap);
   card.appendChild(body);
@@ -110,27 +140,50 @@ function buildCard(entry, mediaMap) {
   return card;
 }
 
+function trophyBlock(eyebrow, trophy) {
+  if (!trophy) return "";
+  const typeClass = `type-${trophy.type || "bronze"}`;
+  return `
+    <div class="trophy-block">
+      ${trophy.icon_url ? `<img src="${trophy.icon_url}" alt="" />` : ""}
+      <div class="trophy-body">
+        <div class="trophy-eyebrow">${eyebrow}</div>
+        <div class="trophy-name ${typeClass}">${trophy.name || ""}</div>
+        <div class="trophy-detail">${trophy.detail || ""}</div>
+        <div class="trophy-stats">
+          ${trophy.rarity ? `<span class="rarity-tag">${trophy.rarity}</span>` : ""}
+          ${trophy.earned_rate ? `<span>${trophy.earned_rate}% of players</span>` : ""}
+        </div>
+      </div>
+    </div>
+  `;
+}
+
 function openLightbox(entry, filename) {
   const lightbox = document.getElementById("lightbox");
   const content = document.getElementById("lightbox-content");
   content.innerHTML = "";
 
   if (filename) {
-    const el = mediaEl(filename);
-    if (el.tagName === "VIDEO") {
-      el.muted = false;
-      el.controls = true;
-      el.autoplay = true;
-    }
-    content.appendChild(el);
+    const mediaWrap = document.createElement("div");
+    mediaWrap.className = "lightbox-media";
+    const el = mediaEl(filename, { muted: false, controls: true });
+    if (el.tagName === "VIDEO") el.autoplay = true;
+    mediaWrap.appendChild(el);
+    content.appendChild(mediaWrap);
   }
 
   const info = document.createElement("div");
   info.className = "lightbox-info";
   info.innerHTML = `
     <h2>${cleanTitle(entry.game_title)}</h2>
-    ${entry.platinum_trophy_name ? `<div class="plat-name">🏆 ${entry.platinum_trophy_name}</div>` : ""}
-    <div class="timestamp">${formatTimestamp(entry.earned_at)}</div>
+    <div class="lightbox-sub">
+      <span>${formatDateTime(entry.earned_at)}</span>
+      ${entry.platform ? `<span class="platform-tag">${entry.platform.split(",")[0]}</span>` : ""}
+      ${entry.total_trophies ? `<span>${entry.total_trophies} trophies total</span>` : ""}
+    </div>
+    ${trophyBlock("Platinum", entry.platinum)}
+    ${trophyBlock("Unlocked by — the last trophy earned", entry.unlocked_by)}
   `;
   content.appendChild(info);
 
@@ -153,6 +206,16 @@ document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") closeLightbox();
 });
 
+function buildStats(all, withCapture) {
+  const stats = document.getElementById("stats");
+  const years = new Set(all.map((e) => new Date(e.earned_at).getFullYear()));
+  stats.innerHTML = `
+    <div class="stat-pill plat"><b>${all.length}</b>&nbsp;platinums</div>
+    <div class="stat-pill"><b>${withCapture}</b>&nbsp;with a capture</div>
+    <div class="stat-pill"><b>${years.size}</b>&nbsp;years</div>
+  `;
+}
+
 async function main() {
   const [synced, manual, mediaMap] = await Promise.all([
     fetchJson("data/platinums.json"),
@@ -163,23 +226,50 @@ async function main() {
   const all = [...(synced || []), ...(manual || [])];
   all.sort((a, b) => new Date(b.earned_at) - new Date(a.earned_at));
 
-  const grid = document.getElementById("grid");
+  const timeline = document.getElementById("timeline");
   const empty = document.getElementById("empty");
-  const stats = document.getElementById("stats");
 
   if (all.length === 0) {
     empty.classList.remove("hidden");
     return;
   }
 
-  const withCapture = all.filter((e) => mediaMap && mediaMap[e.np_communication_id]).length;
-  stats.innerHTML = `
-    <div><b>${all.length}</b>platinums</div>
-    <div><b>${withCapture}</b>with a capture</div>
-  `;
+  const map = mediaMap || {};
+  const withCapture = all.filter((e) => map[e.np_communication_id]).length;
+  buildStats(all, withCapture);
 
+  const byYear = new Map();
   for (const entry of all) {
-    grid.appendChild(buildCard(entry, mediaMap || {}));
+    const year = new Date(entry.earned_at).getFullYear();
+    if (!byYear.has(year)) byYear.set(year, []);
+    byYear.get(year).push(entry);
+  }
+
+  let cardIndex = 0;
+  for (const [year, entries] of byYear) {
+    const section = document.createElement("section");
+    section.className = "year-section";
+
+    const header = document.createElement("div");
+    header.className = "year-header";
+    header.innerHTML = `
+      <h2>${year}</h2>
+      <span class="year-count">${entries.length} platinum${entries.length === 1 ? "" : "s"}</span>
+      <span class="year-line"></span>
+    `;
+    section.appendChild(header);
+
+    const grid = document.createElement("div");
+    grid.className = "grid";
+    for (const entry of entries) {
+      const card = buildCard(entry, map);
+      card.style.animationDelay = `${Math.min(cardIndex * 0.04, 0.4)}s`;
+      cardIndex++;
+      grid.appendChild(card);
+    }
+    section.appendChild(grid);
+
+    timeline.appendChild(section);
   }
 }
 
