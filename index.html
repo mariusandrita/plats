@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Platinum Showcase</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22><text y=%2220%22 font-size=%2220%22>🏆</text></svg>" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="hero-badge">🏆</div>
+      <h1>Platinum Showcase</h1>
+      <p class="tagline">Every platinum, newest to oldest.</p>
+      <div id="stats" class="stats"></div>
+    </div>
+  </header>
+
+  <main>
+    <div id="grid" class="grid"></div>
+    <p id="empty" class="empty hidden">No platinums loaded yet.</p>
+  </main>
+
+  <footer>
+    <p>Synced from PSN &middot; <a href="https://github.com/mariusandrita/plats" target="_blank" rel="noreferrer">source</a></p>
+  </footer>
+
+  <div id="lightbox" class="lightbox hidden">
+    <button id="lightbox-close" class="lightbox-close" aria-label="Close">&times;</button>
+    <div id="lightbox-content" class="lightbox-content"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
