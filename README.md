@@ -28,6 +28,19 @@ can be anything unique, it's only used to look up media.
 Supported: `.mp4` / `.webm` / `.mov` (rendered as a looping muted preview,
 click to play with sound) and `.jpg` / `.jpeg` / `.png`.
 
+## media/unsorted/
+
+Files here are known-good captures whose game doesn't match any current
+platinum entry (usually because the platinum isn't in `data/platinums.json`
+yet — e.g. an older PS3/PS4-era plat not returned by the sync). Confirm the
+right game/date, add it to `data/manual_platinums.json`, then move the file
+out of `unsorted/` and into `media_map.json` like any other capture.
+
+- `ac4-black-flag-conqueror-unmatched.mp4` — shows the "The Conqueror" trophy
+  (Assassin's Creed IV: Black Flag, original release). Not in the synced
+  list; needs a manual platinum entry with the actual earn date once
+  confirmed.
+
 ## Local preview
 
 Any static file server works, e.g. `python3 -m http.server` from this
