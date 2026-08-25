@@ -216,11 +216,23 @@ function buildStats(all, withCapture) {
   `;
 }
 
+function buildMilestone(milestone) {
+  const banner = document.createElement("div");
+  banner.className = "milestone";
+  banner.innerHTML = `
+    <span class="milestone-icon">${milestone.icon || "📍"}</span>
+    <span class="milestone-label">${milestone.label}</span>
+    <span class="milestone-date">${formatDate(milestone.date)}</span>
+  `;
+  return banner;
+}
+
 async function main() {
-  const [synced, manual, mediaMap] = await Promise.all([
+  const [synced, manual, mediaMap, milestones] = await Promise.all([
     fetchJson("data/platinums.json"),
     fetchJson("data/manual_platinums.json"),
     fetchJson("data/media_map.json"),
+    fetchJson("data/milestones.json"),
   ]);
 
   const all = [...(synced || []), ...(manual || [])];
@@ -237,6 +249,11 @@ async function main() {
   const map = mediaMap || {};
   const withCapture = all.filter((e) => map[e.np_communication_id]).length;
   buildStats(all, withCapture);
+
+  // Milestones sorted newest-first, same order as `all`, so a single pointer
+  // can walk both lists in lockstep as we render.
+  const sortedMilestones = [...(milestones || [])].sort((a, b) => new Date(b.date) - new Date(a.date));
+  let milestoneIndex = 0;
 
   const byYear = new Map();
   for (const entry of all) {
@@ -259,17 +276,37 @@ async function main() {
     `;
     section.appendChild(header);
 
-    const grid = document.createElement("div");
+    let grid = document.createElement("div");
     grid.className = "grid";
+    section.appendChild(grid);
+
     for (const entry of entries) {
+      // A milestone that happened strictly before this entry (chronologically
+      // older) gets inserted as a full-width banner right before its card.
+      while (
+        milestoneIndex < sortedMilestones.length &&
+        new Date(sortedMilestones[milestoneIndex].date) > new Date(entry.earned_at)
+      ) {
+        section.appendChild(buildMilestone(sortedMilestones[milestoneIndex]));
+        grid = document.createElement("div");
+        grid.className = "grid";
+        section.appendChild(grid);
+        milestoneIndex++;
+      }
+
       const card = buildCard(entry, map);
       card.style.animationDelay = `${Math.min(cardIndex * 0.04, 0.4)}s`;
       cardIndex++;
       grid.appendChild(card);
     }
-    section.appendChild(grid);
 
     timeline.appendChild(section);
+  }
+
+  // Any remaining (older-than-everything) milestones go at the very end.
+  while (milestoneIndex < sortedMilestones.length) {
+    timeline.appendChild(buildMilestone(sortedMilestones[milestoneIndex]));
+    milestoneIndex++;
   }
 }
 
